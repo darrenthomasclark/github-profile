@@ -73,6 +73,11 @@ p {
   padding: 10px;
 }
 
+.followers ul {
+ list-style: none;
+ padding-left: 0;
+}
+
 .followers a:link {
   text-decoration: none;
   color: #c3c1c3;
@@ -99,16 +104,19 @@ p {
 }
 
 .repos {
-  columns: 2 25px;
-  -webkit-columns: 2 25px;
-  -moz-columns: 2 25px;
-  column-gap: .25em;
-  -webkit-column-gap: .25em;
-  -moz-column-gap: .25em;
-  margin-left: 10px;
   height: 225px;
   border-right: 1px dashed gray;
   padding: 10px;
+}
+
+.repos ul {
+ list-style: none;
+ padding-left: 0;
+ -webkit-columns: 2 25px;
+ -moz-columns: 2 25px;
+ column-gap: .25em;
+ -webkit-column-gap: .25em;
+ -moz-column-gap: .25em;
 }
 
 .repos a:link {
@@ -174,12 +182,6 @@ p {
   padding: 20px;
   background-color: white;
 }
-
-ul {
-  list-style: none;
-  padding-left: 0;
-}
-
 .slogan {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.5em;
