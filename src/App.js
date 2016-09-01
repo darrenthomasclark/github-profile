@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Avatar from './Avatar'
 import Followers from './Followers'
 import Repos from './Repos'
-// import Bio from './Bio'
+import Bio from './Bio'
 
 
 import 'whatwg-fetch'
@@ -29,19 +29,21 @@ class App extends Component {
     return <div className='App'>
       <body>
         <div className="user">
-        <h1>Darren Clark</h1>
           <div className="usercontainer">
-            <div className="avatar"><Avatar id={this.state.userData.id} /></div>
-            <div className="biorepos">
-                <h2>Bio</h2>
-                <div className="bio">Designer & Developer based out of Tampa, Florida.</div>
-                <div className="repos">
-                <h2>Repos</h2>
-                  <Repos url={this.state.userData.repos_url} /></div>
+            <div className="avatar">
+              <h1>Darren Clark</h1>
+              <div className="userphoto"><Avatar id={this.state.userData.id} /></div>
+              <h3>A Peace of Mind Deliverer</h3>
             </div>
-            <div className="followers">
-              <h2>Followers</h2>
-              <Followers url={this.state.userData.followers_url} /></div>
+            <div className="biorepos">
+                <div className="bio"><p>Hi there.</p>I'm Darren. I'm a Designer & Developer in Riverview, Florida.</div>
+                <div className="repos">
+                <h2>Code Projects_</h2>
+                  <Repos url={this.state.userData.repos_url} /></div>
+                  <div className="followers">
+                    <h2>Git Followers_</h2>
+                    <Followers url={this.state.userData.followers_url} /></div>
+            </div>
           </div>
         </div>
       </body>

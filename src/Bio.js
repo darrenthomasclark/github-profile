@@ -1,14 +1,12 @@
 import React, { Component } from 'react'
-import './index.css'
 
-class Avatar extends Component {
+class Bio extends Component {
+render () {
 
-  render () {
-    return <div className='Avatar'>
-              <img src={`https://avatars.githubusercontent.com/u/${this.props.id}?v=3`} alt="Profile Pic"/>
-              </div>
-           </div>
-  }
+  return <div className='Bio'>
+    <h2><a href={this.props.blog}>{this.props.blog}</a></h2>
+      <p>{this.props.bio}</p>
+        </div>
 }
-
-export default Avatar
+}
+export default Bio
